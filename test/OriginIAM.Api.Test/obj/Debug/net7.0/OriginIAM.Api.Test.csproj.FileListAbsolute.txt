@@ -1,6 +1,0 @@
-C:\Projects\OriginIAM\OriginIAM.Api.Test\bin\Debug\net7.0\CoverletSourceRootsMapping
-C:\Projects\OriginIAM\OriginIAM.Api.Test\obj\Debug\net7.0\OriginIAM.Api.Test.csproj.AssemblyReference.cache
-C:\Projects\OriginIAM\OriginIAM.Api.Test\obj\Debug\net7.0\OriginIAM.Api.Test.GeneratedMSBuildEditorConfig.editorconfig
-C:\Projects\OriginIAM\OriginIAM.Api.Test\obj\Debug\net7.0\OriginIAM.Api.Test.AssemblyInfoInputs.cache
-C:\Projects\OriginIAM\OriginIAM.Api.Test\obj\Debug\net7.0\OriginIAM.Api.Test.AssemblyInfo.cs
-C:\Projects\OriginIAM\OriginIAM.Api.Test\obj\Debug\net7.0\OriginIAM.Api.Test.csproj.CoreCompileInputs.cache
