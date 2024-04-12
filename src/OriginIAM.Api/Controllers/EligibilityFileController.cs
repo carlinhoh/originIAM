@@ -28,18 +28,13 @@ namespace OriginIAM.Api.Controllers
             }
             try
             {
-                //var task = _eligibilityFileService.ProcessFileAsync(request.FileAddress, request.EmployerName, false);
-                //await _eligibilityFileService.ProcessFileAsync(request.FileAddress, request.EmployerName, false);
-                Task.Run(async () =>
-                {
-                    await _eligibilityFileService.ProcessFileAsync(request.FileAddress, request.EmployerName, false);
-                });
+                var task = _eligibilityFileService.ProcessFileAsync(request.FileAddress, request.EmployerName, false);
 
                 var resultLink = Url.Link("GetReportByEmployerName", new { employerName = request.EmployerName, pageNumber = 1, pageSize = 10 });
 
                 var responseDto = EligibilityResponseFactory.CreateResponseDto();
 
-                return Accepted(new { responseDto, resultLink});
+                return Accepted(new { responseDto, resultLink, task.Id});
             }
             catch (Exception ex)
             {
