@@ -114,11 +114,11 @@ Dijkstra Company (Larger): [Dijkstra](https://eligibilityorigin42.blob.core.wind
 - Transaction for database methods;
 - Rate limiting in the signup controller;
 - Lists of Known Passwords - Even if it passes the password check, treat the password as weak;
-- Doc with examples of req - res;
+- Doc with examples of request - response;
 - Versioning dtos, models and controllers;
 - Monitoring memory usage in the application container;
 - Parallel processing of the csv file (with memory management so as not to exceed a reasonable limit);
-- Batch trips to the bank to save reports (Reducing the number of insertions in the database can make the process much faster. It's currently going line by line).
+- Batch calls to the database to save reports (Reducing the number of insertions in the database can make the process much faster. It's currently going line by line).
 - Automated tests with locally mocked up csv files;
 - System and Health routes (HealthCheck, Echotest, LogSeverity);
 - Folder with architecture decision records;
