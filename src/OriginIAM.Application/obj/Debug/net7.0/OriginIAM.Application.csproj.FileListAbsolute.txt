@@ -1,0 +1,15 @@
+C:\Projects\OriginIAM\OriginIAM.Application\obj\Debug\net7.0\OriginIAM.Application.csproj.AssemblyReference.cache
+C:\Projects\OriginIAM\OriginIAM.Application\obj\Debug\net7.0\OriginIAM.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\OriginIAM\OriginIAM.Application\obj\Debug\net7.0\OriginIAM.Application.AssemblyInfoInputs.cache
+C:\Projects\OriginIAM\OriginIAM.Application\obj\Debug\net7.0\OriginIAM.Application.AssemblyInfo.cs
+C:\Projects\OriginIAM\OriginIAM.Application\obj\Debug\net7.0\OriginIAM.Application.csproj.CoreCompileInputs.cache
+C:\Projects\OriginIAM\OriginIAM.Application\bin\Debug\net7.0\OriginIAM.Application.deps.json
+C:\Projects\OriginIAM\OriginIAM.Application\bin\Debug\net7.0\OriginIAM.Application.dll
+C:\Projects\OriginIAM\OriginIAM.Application\bin\Debug\net7.0\OriginIAM.Application.pdb
+C:\Projects\OriginIAM\OriginIAM.Application\bin\Debug\net7.0\OriginIAM.Domain.dll
+C:\Projects\OriginIAM\OriginIAM.Application\bin\Debug\net7.0\OriginIAM.Domain.pdb
+C:\Projects\OriginIAM\OriginIAM.Application\obj\Debug\net7.0\OriginIAM.Application.csproj.CopyComplete
+C:\Projects\OriginIAM\OriginIAM.Application\obj\Debug\net7.0\OriginIAM.Application.dll
+C:\Projects\OriginIAM\OriginIAM.Application\obj\Debug\net7.0\refint\OriginIAM.Application.dll
+C:\Projects\OriginIAM\OriginIAM.Application\obj\Debug\net7.0\OriginIAM.Application.pdb
+C:\Projects\OriginIAM\OriginIAM.Application\obj\Debug\net7.0\ref\OriginIAM.Application.dll

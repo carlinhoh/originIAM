@@ -1,0 +1,11 @@
+C:\Projects\OriginIAM\OriginIAM.Domain\bin\Debug\net7.0\OriginIAM.Domain.deps.json
+C:\Projects\OriginIAM\OriginIAM.Domain\bin\Debug\net7.0\OriginIAM.Domain.dll
+C:\Projects\OriginIAM\OriginIAM.Domain\bin\Debug\net7.0\OriginIAM.Domain.pdb
+C:\Projects\OriginIAM\OriginIAM.Domain\obj\Debug\net7.0\OriginIAM.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\OriginIAM\OriginIAM.Domain\obj\Debug\net7.0\OriginIAM.Domain.AssemblyInfoInputs.cache
+C:\Projects\OriginIAM\OriginIAM.Domain\obj\Debug\net7.0\OriginIAM.Domain.AssemblyInfo.cs
+C:\Projects\OriginIAM\OriginIAM.Domain\obj\Debug\net7.0\OriginIAM.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\OriginIAM\OriginIAM.Domain\obj\Debug\net7.0\OriginIAM.Domain.dll
+C:\Projects\OriginIAM\OriginIAM.Domain\obj\Debug\net7.0\refint\OriginIAM.Domain.dll
+C:\Projects\OriginIAM\OriginIAM.Domain\obj\Debug\net7.0\OriginIAM.Domain.pdb
+C:\Projects\OriginIAM\OriginIAM.Domain\obj\Debug\net7.0\ref\OriginIAM.Domain.dll

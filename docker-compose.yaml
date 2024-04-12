@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - db
+      - redis
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Port=5432;Database=origin_db;Username=user;Password=password
+      - REDIS_CONNECTIONSTRING=redis:6379,abortConnect=false
+      - ASPNETCORE_ENVIRONMENT=Development
+    mem_limit: 256m
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: origin_db
+    volumes:
+      - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+
+volumes:
+  postgres_data:
