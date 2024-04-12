@@ -69,13 +69,15 @@ This differentiation was made simply to create the opportunity to return the pro
 
 ## Infra Check
 
-Database: ```bash
-			docker exec -it <container_id> psql  -U user -d origin_db
-			```
+Database: 
+```bash
+docker exec -it <container_id> psql  -U user -d origin_db
+   ```
 
-Redis: 	```bash
-			docker exec -it <container_id> redis-cli
-			```		
+Redis: 	
+```bash
+docker exec -it <container_id> redis-cli
+```		
 
 
 ### Running Tests
