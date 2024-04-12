@@ -124,7 +124,7 @@ Dijkstra Company (Larger): [Dijkstra](https://eligibilityorigin42.blob.core.wind
 - Folder with architecture decision records;
 - Hateoas;
 - Test application with Urls that return Html (https://youtube.com for example);
-- Documentar expressões regulares;
+- Document/explain regular expressions;
 - Definition of indicators - Response time, availability, SLA for processing large files;
 - Load Testing;
 
