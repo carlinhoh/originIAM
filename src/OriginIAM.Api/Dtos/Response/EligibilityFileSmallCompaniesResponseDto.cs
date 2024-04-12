@@ -2,6 +2,9 @@
 
 namespace OriginIAM.Api.Dtos.Response
 {
+    /// <summary>
+    /// Response DTO for small companies eligibility file processing.
+    /// </summary>
     public class EligibilityFileSmallCompaniesResponseDto : EligibilityBaseFileResponseDto
     {
         public int TotalProcessed { get; set; }

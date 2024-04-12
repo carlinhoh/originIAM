@@ -102,7 +102,6 @@ Dijkstra Company (Larger): [Dijkstra](https://eligibilityorigin42.blob.core.wind
 
 - Data flow draw;
 - Password Cryptography;
-- Controller documentation;
 - Log;
 - Test controllers;
 - Consider Standardization of methods =>;

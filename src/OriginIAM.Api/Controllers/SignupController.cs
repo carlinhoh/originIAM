@@ -1,16 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OriginIAM.Api.Models.Response;
 using OriginIAM.Application.Interfaces;
-using OriginIAM.Application.Dtos;
-using System;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
 using OriginIAM.Application.Models;
 using OriginIAM.Api.Dtos.Request;
 using OriginIAM.Api.Mappers.OriginIAM.Api.Mappers;
 
 namespace OriginIAM.Api.Controllers
 {
+    /// <summary>
+    /// Controller for managing user signups.
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class SignupController : ControllerBase
@@ -22,7 +21,18 @@ namespace OriginIAM.Api.Controllers
             _signupService = signupService ?? throw new ArgumentNullException(nameof(signupService));
         }
 
+        // <summary>
+        /// Registers a new user with the provided details.
+        /// </summary>
+        /// <param name="request">The signup details.</param>
+        /// <returns>A response indicating whether the signup was successful.</returns>
+        /// <response code="201">Returns the newly created user details.</response>
+        /// <response code="400">If the request is invalid, returns a list of errors.</response>
+        /// <response code="500">If an internal error occurs, returns an error message.</response>
         [HttpPost("")]
+        [ProducesResponseType(typeof(SignupResult), 201)]
+        [ProducesResponseType(typeof(ErrorResponse), 400)]
+        [ProducesResponseType(typeof(ErrorResponse), 500)]
         public async Task<IActionResult> Signup([FromBody] SignupRequestDto request)
         {
             if (!ModelState.IsValid)
@@ -40,7 +50,7 @@ namespace OriginIAM.Api.Controllers
 
                 if (signupResult.Success)
                 {
-                    return CreatedAtAction(nameof(GetUser), new { id = signupResult.UserId }, signupResult);
+                    return CreatedAtAction(nameof(GetUser), new { id = signupResult.UserId}, signupResult);
                 }
                 else
                 {
@@ -54,19 +64,13 @@ namespace OriginIAM.Api.Controllers
             }
         }
 
-        private SignupDto MapRequestToDto(SignupRequestDto request)
-        {
-            return new SignupDto
-            {
-                Email = request.Email,
-                Password = request.Password,
-                Country = request.Country,
-                FullName = request.FullName,
-                AcceptTerms = request.AcceptTerms,
-                BirthDate = request.BirthDate
-            };
-        }
-
+        /// <summary>
+        /// Retrieves a user by their unique identifier. For simplicity's sake, this will not be implemented.
+        /// </summary>
+        /// <param name="id">The user ID.</param>
+        /// <returns>The user details if found; otherwise, NotFound.</returns>
+        [ProducesResponseType(typeof(SignupResult), 200)]
+        [ProducesResponseType(404)]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUser(int id)
         {
