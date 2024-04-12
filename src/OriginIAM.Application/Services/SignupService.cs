@@ -38,7 +38,7 @@ namespace OriginIAM.Application.Services
             if (user != null)
             {
                 //User already exists
-                return userAlreadyExists();
+                return userAlreadyExists(user.Email);
             }
 
             //2. Validate password strength - Already done in the api Model. 
@@ -62,10 +62,11 @@ namespace OriginIAM.Application.Services
             };
         }
 
-        private SignupResult userAlreadyExists()
+        private SignupResult userAlreadyExists(string email)
         {
             return new SignupResult()
             {
+                UserId = email,
                 Success = true,
                 Message = "User already created."
             };

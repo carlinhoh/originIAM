@@ -26,19 +26,23 @@ namespace OriginIAM.Infrastructure.Repositories
 
         public Task<User?> GetUserByEmailAsync(string email)
         {
-            return Task.FromResult(_users.Values.FirstOrDefault(u => u.Email == email));
+            if (_users.ContainsKey(email))
+            {
+                return Task.FromResult<User?>(_users[email]);
+            }
+            return Task.FromResult<User?>(null);
         }
 
         public Task<string> AddAsync(User user)
         {
             var currentUser = new User(user.Email, user.PasswordHash, user.Country, string.Empty);
-            _users[currentUser.Id] = user;
+            _users[currentUser.Email] = user;
             return Task.FromResult(currentUser.Id);
         }
 
         public Task<bool> UpdateAsync(User user)
         {
-            _users[user.Id] = user;
+            _users[user.Email] = user;
             return Task.FromResult(true);
         }
 

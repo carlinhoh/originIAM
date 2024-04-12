@@ -33,8 +33,6 @@ builder.Services.AddScoped<IEmployerService, EmployerService>();
 builder.Services.AddScoped<ISignupService, SignupService>();
 builder.Services.AddScoped(typeof(ICsvParser<>), typeof(CsvParserService<>));
 builder.Services.AddScoped<IFileDownloader, FileDownloaderService>();
-builder.Services.AddScoped<IEmployerRepository, InMemoryEmployerRepository>();
-builder.Services.AddScoped<IUserRepository, InMemoryUserRepository>();
 
 #endregion
 
@@ -49,6 +47,9 @@ var redisDatabase = redisConnection.GetDatabase();
 #region Singleton Services
 builder.Services.AddSingleton(redisDatabase);
 builder.Services.AddSingleton<IEligibilityReportRepository>(provider => new EligibilityReportRepository(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddSingleton<IEmployerRepository, InMemoryEmployerRepository>();
+builder.Services.AddSingleton<IUserRepository, InMemoryUserRepository>();
+
 #endregion
 
 var app = builder.Build();

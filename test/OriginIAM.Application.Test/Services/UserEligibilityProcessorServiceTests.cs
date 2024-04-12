@@ -1,4 +1,6 @@
-﻿using FluentAssertions;
+﻿using Castle.Core.Logging;
+using FluentAssertions;
+using Microsoft.Extensions.Logging;
 using Moq;
 using OriginIAM.Application.Interfaces;
 using OriginIAM.Application.Models;
@@ -19,6 +21,7 @@ namespace OriginIAM.Application.Tests.Services
         private readonly Mock<IEligibilityReportService> _eligibilityReportServiceMock = new();
         private readonly Mock<IEligibilityService> _eligibilityServiceMock = new();
         private readonly UserEligibilityProcessorService _service;
+        private readonly Mock<ILogger<UserEligibilityProcessorService>> _mockLogger = new Mock<ILogger<UserEligibilityProcessorService>>();
 
         public UserEligibilityProcessorServiceTests()
         {
@@ -26,7 +29,7 @@ namespace OriginIAM.Application.Tests.Services
                 _userServiceMock.Object,
                 _employerServiceMock.Object,
                 _eligibilityReportServiceMock.Object,
-                _eligibilityServiceMock.Object);
+                _eligibilityServiceMock.Object, _mockLogger.Object);
         }
 
         [Theory]
