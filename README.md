@@ -119,4 +119,4 @@ Liskov Company: [Liskov](https://eligibilityorigin42.blob.core.windows.net/eligi
 - Test application with Urls that return Html (https://youtube.com for example);
 - Documentar expressões regulares;
 - Definition of indicators - Response time, availability, SLA for processing large files;
-
+- Load Testing;
