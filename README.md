@@ -83,11 +83,12 @@ dotnet test
 ```
 
 ## Usage
-Refer to the [Swagger UI](http://localhost:5000/swagger) for testing and interacting with the API after running the application.
+Locally (IIs) - Refer to the [Swagger UI](http://localhost:44361/swagger) for testing and interacting with the API after running the application.
 
 ## Blobs for test
 
-Liskov Company: 
+Liskov Company: [Liskov](https://eligibilityorigin42.blob.core.windows.net/eligibility-files/liskov.csv?sp=r&st=2024-04-11T16:40:16Z&se=2024-04-19T00:40:16Z&spr=https&sv=2022-11-02&sr=b&sig=ZjOHPVrMcYTx%2Fsmq8l4LZR2nvkyT0Kf17CXayGLBDSk%3D)
+
 
 
 ## Backlog
